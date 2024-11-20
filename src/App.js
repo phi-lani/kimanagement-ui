@@ -1,24 +1,37 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import StartupDashboard from './pages/StartupDashboard';
+//import ViewProfile from './pages/ViewProfile';
+import UpdateStartupProfile from './pages/UpdateStartupProfile';
+//import SearchKeyIndividuals from './pages/SearchKeyIndividuals'; // Ensure this component is created
+import SearchKeyIndividuals from './pages/SearchKeyIndividuals';
+import LoginPage from './pages/LoginPage';
+import SignupPage from './pages/SignupPage';
+import LandingPage from './pages/LandingPage';
+import KeyIndividualDashboard from './pages/KeyIndividualDashboard'; 
+import ViewStartupProfile from './pages/ViewStartupProfile';
+import NotFound from './pages/NotFound'
+//import NotFoundPage from './pages/NotFoundPage';
+import './styles.css'; // Import your CSS file for styling
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <div className="app-container">
+        <Routes>
+          <Route path="/" element={<LandingPage />} />
+          <Route path="/login" element={<LoginPage />} />
+          <Route path="/signup" element={<SignupPage />} />
+          <Route path="/startup/dashboard" element={<StartupDashboard />} />
+          <Route path="/startup/update-profile" element={<UpdateStartupProfile />} />
+          <Route path="/startup/search-key-individuals" element={<SearchKeyIndividuals />}/>
+          <Route path="/keyindividual/dashboard" element={<KeyIndividualDashboard />} /> {/* New Route */}
+          {/* <Route path="*" element={<NotFoundPage />} /> 404 Page */}
+          <Route path="/startup/view-profile" element={<ViewStartupProfile />} />
+          <Route path="*" element={<NotFound />} /> {/* Catch-all route for 404 page */}
+        </Routes>
+      </div>
+    </Router>
   );
 }
 

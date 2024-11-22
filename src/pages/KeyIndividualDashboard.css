@@ -1,0 +1,60 @@
+/* StartupDashboard.css */
+
+.dashboard-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9; /* Light gray background */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    text-align: center;
+  }
+  
+  .dashboard-title {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .button-group {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  
+  .dashboard-btn {
+    padding: 10px 20px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 150px;
+    margin: 10px;
+  }
+  
+  .btn-view {
+    background-color: #007bff; /* Primary blue */
+  }
+  
+  .btn-view:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+  }
+  
+  .btn-update {
+    background-color: #6c757d; /* Secondary gray */
+  }
+  
+  .btn-update:hover {
+    background-color: #5a6268; /* Darker gray on hover */
+  }
+  
+  .btn-search {
+    background-color: #28a745; /* Success green */
+  }
+  
+  .btn-search:hover {
+    background-color: #218838; /* Darker green on hover */
+  }
+  

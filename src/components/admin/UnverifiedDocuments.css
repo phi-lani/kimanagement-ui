@@ -1,0 +1,42 @@
+.unverified-documents-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  h1 {
+    text-align: center;
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .documents-list {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .document-item {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 15px;
+    margin-bottom: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .document-item p {
+    margin: 5px 0;
+    font-size: 1rem;
+  }
+  
+  .error {
+    text-align: center;
+    color: red;
+    font-size: 1.2rem;
+  }
+  

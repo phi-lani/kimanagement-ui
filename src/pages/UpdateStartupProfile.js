@@ -14,7 +14,7 @@ const UpdateStartupProfile = () => {
     // Fetch existing profile data and populate the form
     const fetchProfile = async () => {
       try {
-        const response = await axios.get('http://localhost:8080/startup/viewProfile', {
+        const response = await axios.get('http://localhost:8080/ViewProfile', {
           headers: {
             Authorization: `Bearer ${localStorage.getItem('token')}`,
           },
